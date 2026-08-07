@@ -1,0 +1,92 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Build folders
+bin/
+obj/
+
+# .NET & NuGet local caches
+.nuget/
+.dotnet/
+
+# Rider / VSCode
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+appsettings.Development.local.json
+.local/
+
+# Uploads (optional if large)
+uploads/
+
+# AraSeg local production model artifacts
+wathiq-araseg-service/models/**/best_model/
+
+allfiles.txt 
+TestResults/
+artifacts/
+__pycache__/
+.env.*
+!wathiq-araseg-service/.env.example
+wathiq-frontend/node_modules/
+wathiq-frontend/dist/
+wathiq-frontend/.dotnet/
+wathiq-frontend/.dotnet-build/
+
+wathiq-frontend/tools/
+
+!wathiq-araseg-service/src/wathiq_araseg/artifacts/
+!wathiq-araseg-service/src/wathiq_araseg/artifacts/*.py
+!wathiq-araseg-service/tests/artifacts/
+!wathiq-araseg-service/tests/artifacts/test_*.py
+
+# =========================
+# Local / generated files
+# =========================
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# .NET build output
+**/bin/
+**/obj/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.db-shm
+*.db-wal
+
+# AraSeg model binaries
+wathiq-araseg-service/models/**/best_model/
+*.safetensors
+
+# Local Elasticsearch distribution
+Wathiq_code/tools/elasticsearch-9.3.3/
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

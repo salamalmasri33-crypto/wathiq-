@@ -1,0 +1,40 @@
+{
+  "pipeline_name": "Wathiq V10 Broad + V18 Specific K20",
+  "broad": {
+    "method": "class-balanced hybrid example retrieval plus bilingual definitions",
+    "top_m_per_broad": 5,
+    "source_weights": {
+      "e5_examples": 0.3,
+      "arabic_examples": 0.5,
+      "bm25_examples": 0.2
+    },
+    "definition_weights": {
+      "e5_english": 0.4,
+      "arabic_model_arabic": 0.6
+    },
+    "final_weights": {
+      "examples": 0.85,
+      "definitions": 0.15
+    },
+    "softmax_temperature": 0.5
+  },
+  "specific": {
+    "method": "independent label ranking and weighted reciprocal rank fusion inside predicted Broad",
+    "examples_per_label": 3,
+    "k": 20,
+    "rrf_weights": {
+      "e5_definitions": 0.3,
+      "arabic_examples": 0.5,
+      "bm25_examples": 0.2
+    },
+    "rrf_constant": 10
+  },
+  "models": {
+    "e5": "intfloat/multilingual-e5-base",
+    "arabic": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2"
+  },
+  "selective_qwen": {
+    "included": false,
+    "reason": "The competition version selected the lowest-margin 6 percent across a complete batch. Online single-document service needs a separately calibrated threshold."
+  }
+}

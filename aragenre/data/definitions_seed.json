@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "project": "Wathiq",
+  "broad_categories": [
+    {
+      "broad_category": "AdministrativeAndLegal",
+      "name_ar": "إداري وقانوني",
+      "name_en": "Administrative and Legal",
+      "definition_ar": "وثائق حكومية تنظم العمل الإداري أو تصدر قرارا رسميا أو تنقل مخاطبة رسمية بين جهة حكومية وجهة أخرى",
+      "definition_en": "Government documents that organize administrative work issue an official decision or communicate formally between government entities",
+      "is_active": true,
+      "specific_types": [
+        {
+          "specific_type": "AdministrativeDecision",
+          "name_ar": "قرار إداري",
+          "name_en": "Administrative Decision",
+          "definition_ar": "وثيقة رسمية تصدر عن مسؤول أو جهة إدارية وتتضمن قرارا محددا مثل تشكيل لجنة أو تكليف موظف أو اعتماد إجراء أو إلغاء قرار سابق",
+          "definition_en": "An official document issued by an administrative authority containing a specific decision such as forming a committee assigning an employee approving a procedure or cancelling a previous decision",
+          "is_active": true
+        },
+        {
+          "specific_type": "OfficialLetter",
+          "name_ar": "كتاب رسمي",
+          "name_en": "Official Letter",
+          "definition_ar": "مراسلة رسمية موجهة من جهة حكومية إلى جهة أخرى أو إلى فرد بهدف نقل معلومات أو طلب إجراء أو تقديم رد أو توضيح",
+          "definition_en": "A formal communication sent by a government entity to another entity or an individual to provide information request an action or deliver a response or clarification",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "broad_category": "FinancialAndContractual",
+      "name_ar": "مالي وتعاقدي",
+      "name_en": "Financial and Contractual",
+      "definition_ar": "وثائق حكومية تتعلق بالنفقات والفواتير والمدفوعات والعقود والاتفاقيات والالتزامات المالية بين الأطراف",
+      "definition_en": "Government documents related to expenses invoices payments contracts agreements and financial obligations between parties",
+      "is_active": true,
+      "specific_types": [
+        {
+          "specific_type": "InvoiceAndExpense",
+          "name_ar": "فاتورة أو نفقة",
+          "name_en": "Invoice and Expense",
+          "definition_ar": "مستند يثبت قيمة سلعة أو خدمة أو نفقة ويتضمن عادة البنود والكميات والمبالغ والجهة الموردة أو المستفيدة",
+          "definition_en": "A document proving the value of goods services or an expense and usually containing items quantities amounts and the supplier or beneficiary",
+          "is_active": true
+        },
+        {
+          "specific_type": "ContractAgreementAndAmendment",
+          "name_ar": "عقد أو اتفاقية أو ملحق",
+          "name_en": "Contract Agreement and Amendment",
+          "definition_ar": "وثيقة ملزمة بين طرفين أو أكثر تحدد الحقوق والالتزامات والمدة والقيمة والشروط وتشمل العقود والاتفاقيات والملاحق والتعديلات",
+          "definition_en": "A binding document between two or more parties defining rights obligations duration value and terms including contracts agreements addenda and amendments",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "broad_category": "CitizenServicesAndRecords",
+      "name_ar": "خدمات المواطنين والسجلات",
+      "name_en": "Citizen Services and Records",
+      "definition_ar": "وثائق ترتبط بطلبات المواطنين والخدمات الحكومية والشهادات والوثائق التي تثبت واقعة أو حالة أو بيانات رسمية",
+      "definition_en": "Documents related to citizen applications government services certificates and records that prove an official fact status or information",
+      "is_active": true,
+      "specific_types": [
+        {
+          "specific_type": "ApplicationAndServiceRequest",
+          "name_ar": "طلب خدمة أو استمارة",
+          "name_en": "Application and Service Request",
+          "definition_ar": "طلب أو نموذج يقدمه مواطن أو جهة للحصول على خدمة حكومية أو بدء معاملة أو تسجيل طلب رسمي",
+          "definition_en": "An application or form submitted by a citizen or organization to obtain a government service initiate a transaction or register an official request",
+          "is_active": true
+        },
+        {
+          "specific_type": "CertificateAndAttestation",
+          "name_ar": "شهادة أو وثيقة إثبات",
+          "name_en": "Certificate and Attestation",
+          "definition_ar": "وثيقة رسمية تصدر عن جهة مختصة وتثبت واقعة أو صفة أو مؤهلا أو حالة أو صحة بيانات محددة",
+          "definition_en": "An official document issued by a competent authority certifying a fact status qualification condition or the validity of specific information",
+          "is_active": true
+        }
+      ]
+    }
+  ]
+}

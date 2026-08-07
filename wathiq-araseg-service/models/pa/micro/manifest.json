@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0",
+  "provider": "AraSeg",
+  "track": "PA",
+  "artifactRole": "micro-ensemble-member",
+  "modelVersion": "PA_micro_20260724_174832",
+  "sourceRun": "PA_micro_20260724_174832",
+  "artifactDirectory": "best_model",
+  "modelFile": "model.safetensors",
+  "modelSha256": "af194bf0b31823febd1f9479f771fe29409751561f56205dec03358ab38eb9f3",
+  "architecture": "BertForTokenClassification",
+  "tokenizerClass": "BertTokenizer",
+  "numberOfLabels": 2,
+  "vocabularySize": 30001,
+  "validationScope": {
+    "artifactIntegrity": "validated",
+    "compatibilityMetadata": "validated",
+    "boardValidationScope": "ensemble-only",
+    "standaloneComponentScoreAsserted": false
+  },
+  "ensemble": {
+    "boardSubmissionId": 861752,
+    "submissionFile": "pa_current_micro_ens_a095_m005_d0543_e0310.zip",
+    "pairedBaseRun": "PA_finetune_20260723_104427",
+    "baseWeight": 0.95,
+    "microWeight": 0.05,
+    "maxLength": 512,
+    "stride": 64,
+    "defaultThreshold": 0.543,
+    "punctuationThreshold": 0.31
+  },
+  "files": {
+    "config.json": {
+      "sizeBytes": 849,
+      "sha256": "7f038b4e4fd37c5303b5d210f6562cc55833a72c29b3812bf558ee064dafa8af"
+    },
+    "model.safetensors": {
+      "sizeBytes": 433995568,
+      "sha256": "af194bf0b31823febd1f9479f771fe29409751561f56205dec03358ab38eb9f3"
+    },
+    "tokenizer.json": {
+      "sizeBytes": 776365,
+      "sha256": "d92c914ed3566796784bcd8a3dc4afccd5b7096e10d3dbad04947b7fcca0f9d7"
+    },
+    "tokenizer_config.json": {
+      "sizeBytes": 519,
+      "sha256": "7d6b3d44690be64208f7e27f6abeafd60bff0bb0190d0e8977a2cc03c4ecd13c"
+    },
+    "training_args.bin": {
+      "sizeBytes": 5265,
+      "sha256": "b3e1cbff9a1c846c3e4b1f676139ebab333e7856fac554c0b52e9280f0c411c0"
+    }
+  }
+}

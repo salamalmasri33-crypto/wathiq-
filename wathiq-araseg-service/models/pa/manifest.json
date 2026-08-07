@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "provider": "AraSeg",
+  "track": "PA",
+  "modelVersion": "PA_finetune_20260723_104427",
+  "sourceRun": "PA_finetune_20260723_104427",
+  "artifactDirectory": "best_model",
+  "modelFile": "model.safetensors",
+  "modelSha256": "7d76a8a15a302800b2ba4dfafb3815f50a03370a5b12c7d6734491ac68bfb9d1",
+  "architecture": "BertForTokenClassification",
+  "tokenizerClass": "BertTokenizer",
+  "numberOfLabels": 2,
+  "vocabularySize": 30001,
+  "inference": {
+    "maxLength": 512,
+    "stride": 64,
+    "defaultThreshold": 0.567,
+    "endPunctuationThreshold": 0.32,
+    "paragraphRuleEnabled": true,
+    "forceLastEnabled": true
+  },
+  "validatedBlindResult": {
+    "precision": 0.934,
+    "recall": 0.939,
+    "f1": 0.934,
+    "submissionId": 861529
+  },
+  "files": {
+    "config.json": {
+      "sizeBytes": 849,
+      "sha256": "7f038b4e4fd37c5303b5d210f6562cc55833a72c29b3812bf558ee064dafa8af"
+    },
+    "model.safetensors": {
+      "sizeBytes": 433995568,
+      "sha256": "7d76a8a15a302800b2ba4dfafb3815f50a03370a5b12c7d6734491ac68bfb9d1"
+    },
+    "tokenizer.json": {
+      "sizeBytes": 776365,
+      "sha256": "d92c914ed3566796784bcd8a3dc4afccd5b7096e10d3dbad04947b7fcca0f9d7"
+    },
+    "tokenizer_config.json": {
+      "sizeBytes": 518,
+      "sha256": "b14e7c0a90cf092ced9a33b920c978a0aa39606156472242f7716e7e05744165"
+    },
+    "training_args.bin": {
+      "sizeBytes": 5329,
+      "sha256": "b34dec6d1317697e6e2eacf829f41d0e5de87b804f5a3ea5b251c5bd2cdcb001"
+    }
+  }
+}

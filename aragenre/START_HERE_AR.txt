@@ -1,0 +1,11 @@
+ابدئي من ملف README_AR.md
+
+الترتيب:
+1 تشغيل الخدمة على المنفذ 8001
+2 استيراد postman/Wathiq_Classifier_Service.postman_collection.json
+3 تنفيذ Import Definitions
+4 تنفيذ Import Examples
+5 تنفيذ Classify
+
+أول Import يحتاج إنترنت لتنزيل نموذجي Embedding وقد يستغرق وقتا.
+الخدمة مستقلة حاليا ولا تعدل باك اند وثق.

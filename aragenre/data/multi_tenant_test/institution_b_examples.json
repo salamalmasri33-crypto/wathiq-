@@ -1,0 +1,7 @@
+{"schema_version":"1.0","project":"Wathiq","examples":[
+{"id":"b_invoice_1","broad_category":"FinancialAndAccounting","specific_type":"InvoiceAndExpense","text":"فاتورة توريد أجهزة تتضمن الكمية وسعر الوحدة والضريبة والإجمالي","language":"ar"},
+{"id":"b_invoice_2","broad_category":"FinancialAndAccounting","specific_type":"InvoiceAndExpense","text":"فاتورة خدمات صيانة موضح فيها البنود والتكلفة والمبلغ المستحق","language":"ar"},
+{"id":"b_invoice_3","broad_category":"FinancialAndAccounting","specific_type":"InvoiceAndExpense","text":"كشف فاتورة شراء مواد مكتبية مع الأسعار وضريبة القيمة المضافة","language":"ar"},
+{"id":"b_receipt_1","broad_category":"FinancialAndAccounting","specific_type":"PaymentReceiptAndVoucher","text":"إيصال قبض مبلغ مالي نقدا مقابل رسوم الخدمة المقدمة للمستفيد","language":"ar"},
+{"id":"b_receipt_2","broad_category":"FinancialAndAccounting","specific_type":"PaymentReceiptAndVoucher","text":"سند صرف معتمد يثبت دفع المبلغ للمورد بعد استلام المواد","language":"ar"},
+{"id":"b_receipt_3","broad_category":"FinancialAndAccounting","specific_type":"PaymentReceiptAndVoucher","text":"إيصال دفع إلكتروني يحتوي رقم العملية وقيمة المبلغ وتاريخ السداد","language":"ar"}]}

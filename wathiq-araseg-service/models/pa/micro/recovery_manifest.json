@@ -1,0 +1,67 @@
+{
+  "track": "PA",
+  "component": "micro-model",
+  "sourceRun": "PA_micro_20260724_174832",
+  "sourceModel": "PA_finetune_20260723_104427",
+  "boardSubmissionId": 861752,
+  "ensemble": {
+    "currentWeight": 0.95,
+    "microWeight": 0.05,
+    "defaultThreshold": 0.543,
+    "endPunctuationThreshold": 0.31,
+    "endPunctuationTokens": [
+      ".",
+      "؟",
+      "?",
+      "!",
+      "…"
+    ],
+    "paragraphRule": true,
+    "forceLast": true,
+    "subtokenAlignment": "first"
+  },
+  "modelFiles": [
+    {
+      "name": "config.json",
+      "sizeBytes": 849,
+      "sha256": "7f038b4e4fd37c5303b5d210f6562cc55833a72c29b3812bf558ee064dafa8af"
+    },
+    {
+      "name": "model.safetensors",
+      "sizeBytes": 433995568,
+      "sha256": "af194bf0b31823febd1f9479f771fe29409751561f56205dec03358ab38eb9f3"
+    },
+    {
+      "name": "tokenizer.json",
+      "sizeBytes": 776365,
+      "sha256": "d92c914ed3566796784bcd8a3dc4afccd5b7096e10d3dbad04947b7fcca0f9d7"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "sizeBytes": 519,
+      "sha256": "7d6b3d44690be64208f7e27f6abeafd60bff0bb0190d0e8977a2cc03c4ecd13c"
+    },
+    {
+      "name": "training_args.bin",
+      "sizeBytes": 5265,
+      "sha256": "b3e1cbff9a1c846c3e4b1f676139ebab333e7856fac554c0b52e9280f0c411c0"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "name": "micro_step3_summary.json",
+      "sizeBytes": 2242,
+      "sha256": "838f41efb19e377a1beb44dc64996e30a85906bc17fcd2284e16d34f51ffcd2b"
+    },
+    {
+      "name": "pa_current_micro_ensemble_grid.csv",
+      "sizeBytes": 1419695,
+      "sha256": "607c57f82b7fc828e9359cccafa740dd567cfc03da5b0fadd9f703243c3532df"
+    },
+    {
+      "name": "pa_micro_threshold_grid.csv",
+      "sizeBytes": 293769,
+      "sha256": "fff5b4e24a7de11292ee37f348e14a4811d7f454aab3cabe21a6e6daa9ba7eac"
+    }
+  ]
+}

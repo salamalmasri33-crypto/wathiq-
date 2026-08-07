@@ -1,0 +1,7 @@
+{"schema_version":"1.0","project":"Wathiq","examples":[
+{"id":"a_decision_1","broad_category":"AdministrativeAndOrganizational","specific_type":"AdministrativeDecision","text":"قرار إداري بتشكيل لجنة لمراجعة ملفات العقود ورفع تقرير نهائي","language":"ar"},
+{"id":"a_decision_2","broad_category":"AdministrativeAndOrganizational","specific_type":"AdministrativeDecision","text":"يقرر المدير تكليف الموظف بمتابعة تنفيذ الخطة الإدارية الجديدة","language":"ar"},
+{"id":"a_decision_3","broad_category":"AdministrativeAndOrganizational","specific_type":"AdministrativeDecision","text":"قرار اعتماد الهيكل التنظيمي وتوزيع المسؤوليات بين الإدارات المختصة","language":"ar"},
+{"id":"a_minutes_1","broad_category":"AdministrativeAndOrganizational","specific_type":"MeetingMinutes","text":"محضر اجتماع اللجنة المنعقد لمناقشة خطة العمل والقرارات المتخذة","language":"ar"},
+{"id":"a_minutes_2","broad_category":"AdministrativeAndOrganizational","specific_type":"MeetingMinutes","text":"اجتمع أعضاء المجلس وتم تسجيل الحضور والتوصيات في هذا المحضر","language":"ar"},
+{"id":"a_minutes_3","broad_category":"AdministrativeAndOrganizational","specific_type":"MeetingMinutes","text":"محضر الجلسة الدورية ويتضمن جدول الأعمال والمناقشات ونتائج التصويت","language":"ar"}]}

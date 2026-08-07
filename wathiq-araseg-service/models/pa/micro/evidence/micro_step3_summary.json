@@ -1,0 +1,63 @@
+{
+  "micro_model_dir": "/content/gdrive/MyDrive/AraSeg_LowStorage/PA_training_micro/PA_micro_20260724_174832/micro_model",
+  "dev_path": "/content/gdrive/.shortcut-targets-by-id/1-Ihm7HVnwoI7yjLsO8-eOZSTlLtrKci0/AraSeg_Wathiq_New_Outputs/PA_track_specific_optimization/evaluation/PA_exact_dev/PA_exact_dev_20260723_105323/reports/PA_dev_exact_token_outputs.parquet",
+  "current_model": {
+    "precision": 0.9397415309321709,
+    "recall": 0.9463996919522526,
+    "f1": 0.9430588596423912,
+    "tp": 12289,
+    "fp": 788,
+    "fn": 696,
+    "tn": 149836,
+    "predicted_boundaries": 13077,
+    "gold_boundaries": 12985,
+    "pr_gap": 0.006658161020081654
+  },
+  "micro_default": {
+    "precision": 0.9433335906739752,
+    "recall": 0.9410088563727378,
+    "f1": 0.9421697894980338,
+    "tp": 12219,
+    "fp": 734,
+    "fn": 766,
+    "tn": 149890,
+    "predicted_boundaries": 12953,
+    "gold_boundaries": 12985,
+    "pr_gap": 0.0023247343012373634
+  },
+  "best_micro": {
+    "default_threshold": 0.536,
+    "end_punct_threshold": 0.27,
+    "precision": 0.9420222991157248,
+    "recall": 0.9434732383519445,
+    "f1": 0.9427472104655638,
+    "tp": 12251,
+    "fp": 754,
+    "fn": 734,
+    "tn": 149870,
+    "predicted_boundaries": 13005,
+    "gold_boundaries": 12985,
+    "pr_gap": 0.0014509392362197504,
+    "delta_vs_current": -0.0003116491768274665
+  },
+  "best_ensemble": {
+    "alpha_current": 0.95,
+    "alpha_micro": 0.050000000000000044,
+    "default_threshold": 0.543,
+    "end_punct_threshold": 0.31,
+    "precision": 0.938868961306571,
+    "recall": 0.9474008471313053,
+    "f1": 0.9431156087089849,
+    "tp": 12302,
+    "fp": 801,
+    "fn": 683,
+    "tn": 149823,
+    "predicted_boundaries": 13103,
+    "gold_boundaries": 12985,
+    "pr_gap": 0.008531885824734298,
+    "delta_vs_current": 5.6749066593697606e-05
+  },
+  "dev_probs_path": "/content/gdrive/MyDrive/AraSeg_LowStorage/PA_training_micro/PA_micro_20260724_174832/pa_micro_dev_probs.csv",
+  "micro_grid_path": "/content/gdrive/MyDrive/AraSeg_LowStorage/PA_training_micro/PA_micro_20260724_174832/pa_micro_threshold_grid.csv",
+  "ensemble_grid_path": "/content/gdrive/MyDrive/AraSeg_LowStorage/PA_training_micro/PA_micro_20260724_174832/pa_current_micro_ensemble_grid.csv"
+}

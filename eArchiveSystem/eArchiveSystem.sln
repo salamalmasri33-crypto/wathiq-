@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eArchiveSystem", "eArchiveSystem.csproj", "{F11886DB-63C5-4E18-97C7-2FC557BFC52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eArchive.OcrService", "..\eArchive.OcrService\eArchive.OcrService.csproj", "{14C131F4-83B6-9366-4028-59E984C73693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F11886DB-63C5-4E18-97C7-2FC557BFC52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11886DB-63C5-4E18-97C7-2FC557BFC52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11886DB-63C5-4E18-97C7-2FC557BFC52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11886DB-63C5-4E18-97C7-2FC557BFC52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C131F4-83B6-9366-4028-59E984C73693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C131F4-83B6-9366-4028-59E984C73693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C131F4-83B6-9366-4028-59E984C73693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C131F4-83B6-9366-4028-59E984C73693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEF373D4-79B9-45CA-8C0F-3015A7AB3550}
+	EndGlobalSection
+EndGlobal

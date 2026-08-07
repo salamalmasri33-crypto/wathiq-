@@ -1,0 +1,58 @@
+{
+  "track": "PA",
+  "run_name": "PA_finetune_20260723_104427",
+  "model_source_path": "wathiq-araseg-service/models/pa/best_model",
+  "configuration": {
+    "max_length": 512,
+    "stride": 64,
+    "default_threshold": 0.567,
+    "end_punctuation_threshold": 0.32,
+    "paragraph_rule": true,
+    "force_last": true
+  },
+  "blind_result": {
+    "precision": 0.934,
+    "recall": 0.939,
+    "f1": 0.934,
+    "submission_id": 861529
+  },
+  "model": {
+    "class": "BertForTokenClassification",
+    "num_labels": 2
+  },
+  "tokenizer": {
+    "class": "BertTokenizer",
+    "vocabulary_size": 30001,
+    "is_fast": true
+  },
+  "files": {
+    "config.json": {
+      "size_bytes": 849,
+      "sha256": "7f038b4e4fd37c5303b5d210f6562cc55833a72c29b3812bf558ee064dafa8af"
+    },
+    "model.safetensors": {
+      "size_bytes": 433995568,
+      "sha256": "7d76a8a15a302800b2ba4dfafb3815f50a03370a5b12c7d6734491ac68bfb9d1"
+    },
+    "tokenizer.json": {
+      "size_bytes": 776365,
+      "sha256": "d92c914ed3566796784bcd8a3dc4afccd5b7096e10d3dbad04947b7fcca0f9d7"
+    },
+    "tokenizer_config.json": {
+      "size_bytes": 518,
+      "sha256": "b14e7c0a90cf092ced9a33b920c978a0aa39606156472242f7716e7e05744165"
+    },
+    "training_args.bin": {
+      "size_bytes": 5329,
+      "sha256": "b34dec6d1317697e6e2eacf829f41d0e5de87b804f5a3ea5b251c5bd2cdcb001"
+    }
+  },
+  "smoke_test": {
+    "status": "passed",
+    "logits_shape": [
+      1,
+      14,
+      2
+    ]
+  }
+}
