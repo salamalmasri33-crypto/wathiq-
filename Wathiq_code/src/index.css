@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 20% 94%;
+    --foreground: 230 55% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 55% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 55% 20%;
+
+    /* UPDATED: Primary based on #15253E */
+    --primary: 214 50% 16%;
+    --primary-foreground: 0 0% 100%;
+
+    /* UPDATED: Primary glow based on #3B5978 */
+    --primary-glow: 211 34% 35%;
+
+    /* Keep gold as-is */
+    --secondary: 45 80% 53%;
+    --secondary-foreground: 230 55% 20%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Keep gold as-is */
+    --accent: 45 80% 53%;
+    --accent-foreground: 230 55% 20%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+
+    /* UPDATED: match primary */
+    --ring: 214 50% 16%;
+
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 50% 16%) 0%, hsl(211 34% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 53%) 0%, hsl(45 90% 63%) 100%);
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(214 50% 16%) 0%,
+      hsl(211 34% 35%) 50%,
+      hsl(45 80% 53%) 100%
+    );
+    
+    /* Shadows (slightly aligned to new primary) */
+    --shadow-elegant: 0 10px 30px -10px hsl(214 50% 16% / 0.2);
+    --shadow-gold: 0 0 40px hsl(45 80% 53% / 0.3);
+    --shadow-card: 0 4px 12px hsl(220 13% 91% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 35% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 230 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 230 30% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    /* UPDATED: Primary based on #15253E (slightly brighter in dark mode) */
+    --primary: 214 50% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* UPDATED: Glow based on #3B5978 (slightly brighter in dark mode) */
+    --primary-glow: 211 34% 55%;
+
+    /* Keep gold as-is */
+    --secondary: 45 80% 53%;
+    --secondary-foreground: 230 35% 7%;
+
+    --muted: 230 20% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    /* Keep gold as-is */
+    --accent: 45 80% 53%;
+    --accent-foreground: 230 35% 7%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 230 20% 20%;
+    --input: 230 20% 20%;
+
+    /* UPDATED: match dark primary */
+    --ring: 214 50% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-tajawal;
+    direction: rtl;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cairo font-bold;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .animate-stagger {
+    animation: fadeIn 0.4s ease-out backwards;
+  }
+  
+  .animate-stagger-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-stagger-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-stagger-3 {
+    animation-delay: 0.3s;
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
